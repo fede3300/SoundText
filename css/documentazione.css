@@ -1,0 +1,94 @@
+.navbar {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+a {
+    color: black !important;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 300;
+}
+
+a:hover {
+    color: grey !important;
+}
+
+.footer {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 300;
+    padding-top: 100px;
+    /*padding-bottom: 30px;*/
+
+}
+
+.colfooter {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+.no_underline {
+    text-decoration: none;
+}
+
+.active {
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 600;
+    color: #091A5C;
+}
+
+h4 {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 600;
+    color:#32417D;
+}
+
+.doc1 {
+    padding-top: 20px;
+}
+
+h6 {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 300;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h5 {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.bench {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 600;
+    color: #575F7D;
+}
+
+#wireframe {
+    font-weight: bold;
+    color: #575F7D;
+}
+
+#flowsvg {
+        width: 500px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 10px;
+}
+
+#carouselExampleDark {
+        width: 500px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 10px;
+}
