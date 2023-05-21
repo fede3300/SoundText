@@ -33,7 +33,7 @@
 <nav class="navbar navbar-expand-lg avbar-dark shadow-5-strong">
     <div class="container-fluid">
         <div>
-            <a class="navbar-brand" href="landingpage.html">SoundText
+            <a class="navbar-brand" href="index.html">SoundText
                 <img src="imgs/SOUNDTEXT.png" alt="Bootstrap" width="40" height="40" style="padding-left: 0.5px">
             </a>
         </div>
@@ -48,7 +48,7 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="artisti.html">Artisti</a>
@@ -2153,7 +2153,7 @@
         // if the song is not found, redirect to the home page
         if (current_song == null || current_artist == null || current_image == null) {
             alert("Scegli una canzone dalla pagina principale!");
-            window.location.href = "index.html";
+            window.location.href = "homepage.html";
         }
 
         // Set the song name and the artist in the page
@@ -2166,7 +2166,7 @@
             song_lyrics = song_lyrics_db[current_song][song_lyrics_db[current_song]["default"]];
         } catch (e) {
             alert("Scegli una canzone dalla pagina principale!");
-            window.location.href = "index.html";
+            window.location.href = "homepage.html";
         }
 
         // Set the song lyrics in the page
