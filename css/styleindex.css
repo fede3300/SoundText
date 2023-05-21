@@ -1,8 +1,3 @@
-/* body {
-    background-color: lightblue;
-} */
-
-/* I need to change font size of navbar link */
 .navbar {
     font-family: 'Mitr', sans-serif;
     font-weight: 300;
@@ -52,6 +47,15 @@ a:hover {
     padding-top: 100px;
     /*padding-bottom: 30px;*/
 
+}
+
+p {
+    font-family: 'Poppins', sans-serif !important;
+    font-style: bold italic !important;
+    font-weight: 600 !important;
+    color: #091A5C !important;
+    text-align: center;
+    padding-top: 6px;
 }
 
 .col {
