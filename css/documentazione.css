@@ -100,3 +100,16 @@ h5 {
 #inter {
     font-size: 14px;
 }
+
+.card-img-top {
+    width: 25%;
+}
+
+.insta {
+    padding-top: 8px;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
