@@ -45,7 +45,7 @@ h2 {
 h4 {
     font-family: 'Mitr', sans-serif;
     font-weight: 600;
-    color:#32417D;
+    color: #32417D;
 }
 
 .doc1 {
@@ -72,34 +72,34 @@ h5 {
     color: #575F7D;
 }
 
-#wireframe {
+.wireframe {
     font-weight: bold;
     color: #575F7D;
 }
 
-#flowsvg {
-        width: 500px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 10px;
+.flowsvg {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 #carouselExampleDark {
-        width: 500px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 10px;
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
-#form {
+.form {
     font-size: 14px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-#inter {
+.inter {
     font-size: 14px;
     padding-left: 50px;
     padding-right: 50px;
@@ -116,4 +116,25 @@ h5 {
     display: block;
     margin: 0 auto;
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .inter {
+        font-size: 14px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .form {
+        font-size: 14px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .row > * {
+        /*margin-left: 0;*/
+        /*margin-right: 0;*/
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

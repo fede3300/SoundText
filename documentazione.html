@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 
 <head>
     <title>SoundText</title>
@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,600&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
     <!---------------------->
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4FKE6TPZK"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-X4FKE6TPZK');
@@ -36,646 +40,437 @@
 </head>
 
 <body>
-    <!------------------------------------------------ Background Canvas ------------------------------------------------>
-    <canvas class="orb-canvas"></canvas>
-    <!------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------ Background Canvas ------------------------------------------------>
+<canvas class="orb-canvas"></canvas>
+<!------------------------------------------------------------------------------------------------------------------->
 
-    <nav class="navbar navbar-expand-lg shadow-5-strong">
-        <div class="container-fluid">
-            <div>
-                <a class="navbar-brand" href="index.html">SoundText
-                    <img src="imgs/SOUNDTEXT.png" alt="Bootstrap" width="40" height="40" style="padding-left: 0.5px">
-                </a>
-            </div>
+<nav class="navbar navbar-expand-lg shadow-5-strong">
+    <div class="container-fluid">
+        <div>
+            <a class="navbar-brand" href="index.html">SoundText
+                <img src="imgs/SOUNDTEXT.png" alt="Bootstrap" width="40" height="40" style="padding-left: 0.5px">
+            </a>
+        </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
                 aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span>
                     <i class="fas fa-bars" style="color:#000; font-size:25px;"></i>
                 </span>
-            </button>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
-                    </li>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    </nav>
+</nav>
 
-    <div class="text-center sendus">
-        <h2>Documentazione</h2>
+<div class="text-center sendus">
+    <h2>Documentazione</h2>
+</div>
+
+<div class="doc1 text-center container container-fluid">
+    <div class="row justify-content-center">
+        <div class="col">
+            <h4>Abstract</h4>
+            <h6 class="form">SoundText è un sito web innnovativo che offre agli appassionati di musica la possibilità
+                di accedere
+                facilmente ai testi delle canzoni e
+                alle immediate traduzioni in molteplici lingue. Con SoundText gli utenti possono immergersi nel
+                mondo dei testi,
+                esplorare le parole di canzoni meno conosciute e popolari, per scoprire sempre nuovi significati.
+                Essendo ottimizzato per dispositivi mobili, consente agli utenti di potervi accedere ovunque si
+                trovino.
+            </h6>
+            <h6 class="form">Attraverso SoundText è possibile diventare dei SoundTexter, perché la sua natura
+                collaborativa
+                denota la possibilità
+                che hanno gli utenti di contribuire al sito inviando le proprie traduzioni dei testi musicali.
+                Questo permette una maggiore diversità linguistica e una più ampia comprensione degli utenti di
+                tutto il mondo.
+            </h6>
+            <h6 class="form" style="font-weight: bold;">SoundText, dove le lyrics prendono vita.</h6>
+        </div>
     </div>
 
     <div class="doc1 text-center container container-fluid">
         <div class="row justify-content-center">
             <div class="col">
-                <h4>Abstract</h4>
-                <h6 id="form">SoundText è un sito web innnovativo che offre agli appassionati di musica la possibilità
-                    di accedere
-                    facilmente ai testi delle canzoni e
-                    alle immediate traduzioni in molteplici lingue. Con SoundText gli utenti possono immergersi nel
-                    mondo dei testi,
-                    esplorare le parole di canzoni meno conosciute e popolari, per scoprire sempre nuovi significati.
-                    Essendo ottimizzato per dispositivi mobili, consente agli utenti di potervi accedere ovunque si
-                    trovino.
-                </h6>
-                <h6 id="form">Attraverso SoundText è possibile diventare dei SoundTexter, perché la sua natura
-                    collaborativa
-                    denota la possibilità
-                    che hanno gli utenti di contribuire al sito inviando le proprie traduzioni dei testi musicali.
-                    Questo permette una maggiore diversità linguistica e una più ampia comprensione degli utenti di
-                    tutto il mondo.
-                </h6>
-                <h6 id="form" style="font-weight: bold;">SoundText, dove le lyrics prendono vita.</h6>
-            </div>
-        </div>
-
-        <div class="doc1 text-center container container-fluid">
-            <div class="row justify-content-center">
-                <div class="col">
-                    <h4>Project Management Plan</h4>
-                    <h5>1. Benchmarking</h5>
-                    <div class="container container-fluid text-center">
-                        <div class="row align-items-start">
-                            <div class="col-lg bench">Obiettivi
-                                <h6 id="form">Gli obiettivi di SoundText sono molteplici: fornire un'ampia collezione di
-                                    testi musicali e traduzioni in diverse lingue, costruire una comunità in cui gli
-                                    utenti possono
-                                    inviare le proprie traduzioni e lasciare commenti e recensioni sulle traduzioni
-                                    presenti (funzione che potrà essere implementata e non ora presente),
-                                    offrire un'esperienza utente intuitiva e piacevole per via anche di una grafica
-                                    accattivante.
-                                </h6>
-                                <h6 id="form">Altri obiettivi sono sicuramente il puntare alla qualità delle traduzioni
-                                    (ciò
-                                    potrebbe comportare la verifica e l'approvazione
-                                    delle traduzioni inviate dagli utenti, al fine di mantenere gli standard elevati),
-                                    ma anche l'integrazione con servizi musicali come Spotify, per fornire un'esperienza
-                                    integrata e ancor più coinvolgente.
-                                </h6>
-                            </div>
-                            <div class="col-lg bench">Target
-                                <h6 id="form">Il target di SoundText comprende gli appassionati di musica di tutte le
-                                    età e
-                                    soprattutto provenienti da
-                                    diverse parti del mondo.
-                                </h6>
-                                <h6 id="form">Il sito mira a soddisfare le esigenze di coloro che
-                                    desiderano comprendere i testi musicali e le loro traduzioni.
-                                </h6>
-                                <h6 id="form">Pertanto SoundText si rivolge a un pubblico vasto e diversificato, che
-                                    comprende sia
-                                    appassionati di musica di lunga data che nuovi ascoltatori propensi a
-                                    scoprire nuovi artisti e generi musicali.</h6>
-                            </div>
-                            <div class="col-lg bench">Competitors
-                                <h6 id="form">I siti web che offrono esperienze d'utilizzo analoghe a SoundText sono
-                                    molteplici
-                                    considerando il pubblico cui sono rivolti.
-                                    Alcuni possibili competitor potrebbero includere Genius, AZLyrics, Letras.mus.br.
-
-                                </h6>
-                                <h6 id="form">Genius è un sito web che offre testi, annotazioni, spiegazioni e
-                                    traduzioni ed è
-                                    noto per la comunità di utenti che contribuiscono
-                                    con le annotazioni e interpretazioni.</h6>
-                                <h6 id="form">AZLyrics fornisce una raccolta di testi musicali in diverse lingue cui gli
-                                    utenti
-                                    possono far riferimento.</h6>
-                                <h6 id="form">Letras.mus.br è un sito brasiliano che offre testi in portoghese oltre ad
-                                    altre
-                                    lingue.</h6>
-                                <h6 id="form">La presenza di competitor non significa necessariamente che questi offrano
-                                    le stesse
-                                    caratteristiche e funzionalità di SoundText.
-                                    La sua immediata differenza distintiva è la sua natura collaborativa, la sua
-                                    interattività, la sua grafica funzionale e l'avvio di una possibile comunità di
-                                    amanti di musica.</h6>
-                            </div>
-                        </div>
-                        <div>
-                            <h5>2. Struttura e layout</h5>
-                        </div>
-                        <div>
-                            <h6 id="form">La struttura di SoundText prevede una landing page dalla quale gli utenti
-                                vengono
-                                reindirizzati alla home page.
+                <h4>Project Management Plan</h4>
+                <h5>1. Benchmarking</h5>
+                <div class="container container-fluid text-center">
+                    <div class="row align-items-start">
+                        <div class="col-lg bench">Obiettivi
+                            <h6 class="form">Gli obiettivi di SoundText sono molteplici: fornire un'ampia collezione di
+                                testi musicali e traduzioni in diverse lingue, costruire una comunità in cui gli
+                                utenti possono
+                                inviare le proprie traduzioni e lasciare commenti e recensioni sulle traduzioni
+                                presenti (funzione che potrà essere implementata e non ora presente),
+                                offrire un'esperienza utente intuitiva e piacevole per via anche di una grafica
+                                accattivante.
                             </h6>
-                            <h6 id="form">La homepage presenta il logo del sito e una barra di navigazione che include
-                                le seguenti
-                                sezioni: Artisti, Canzoni, Diventa un SoundTexter e una barra di ricerca.
-                                In basso è presente il footer con gli indirizzamenti alle pagine social Instagram e
-                                Facebook.</h6>
-                            <h6 id="form">Nella sezione "Artisti" gli artisti sono suddivisi in un elenco alfabetico,
-                                presentati
-                                in una tabella a 2 colonne.
-                                Alla fine della tabella è presente una numerazione per la navigazione tramite
-                                paginazione.</h6>
-                            <h6 id="form">Nella sezione "Canzoni" per ogni singolo o album dell'artista viene
-                                visualizzata
-                                un'immagine, il nome dell'artista e il testo originale della canzone.
-                                È presente un pulsante che consente di selezionare la lingua e ottenere una traduzione
-                                immediata.
-                                Inoltre, viene incorporato un lettore di Spotify relativo alla canzone selezionata.</h6>
-                            <h6 id="form">Nella sezione "Diventa un SoundTexter" è presente un modulo in cui gli utenti
-                                possono
-                                compilare i dati per inviare una traduzione di una canzone.
-                                È presente anche un editor di testo che consente di formattare il testo con
-                                sottolineature, testi in grassetto o corsivo, e così via.</h6>
+                            <h6 class="form">Altri obiettivi sono sicuramente il puntare alla qualità delle traduzioni
+                                (ciò
+                                potrebbe comportare la verifica e l'approvazione
+                                delle traduzioni inviate dagli utenti, al fine di mantenere gli standard elevati),
+                                ma anche l'integrazione con servizi musicali come Spotify, per fornire un'esperienza
+                                integrata e ancor più coinvolgente.
+                            </h6>
                         </div>
-                        <div>
-                            <h6 id="wireframe">Architettura ad albero</h6>
-                            <div class="text-center">
-                                <img id="flowsvg" src="imgs/wireframe/SoundText.svg" class="img-fluid" alt="...">
-                            </div>
+                        <div class="col-lg bench">Target
+                            <h6 class="form">Il target di SoundText comprende gli appassionati di musica di tutte le
+                                età e
+                                soprattutto provenienti da
+                                diverse parti del mondo.
+                            </h6>
+                            <h6 class="form">Il sito mira a soddisfare le esigenze di coloro che
+                                desiderano comprendere i testi musicali e le loro traduzioni.
+                            </h6>
+                            <h6 class="form">Pertanto SoundText si rivolge a un pubblico vasto e diversificato, che
+                                comprende sia
+                                appassionati di musica di lunga data che nuovi ascoltatori propensi a
+                                scoprire nuovi artisti e generi musicali.</h6>
                         </div>
-                        <div>
-                            <h6 id="wireframe">Wireframe</h6>
-                            <div class="d-flex justify-content-center">
-                                <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="imgs/wireframe/landingpage.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="imgs/wireframe/homepage.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="imgs/wireframe/artisti.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="imgs/wireframe/canzoni.png" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="imgs/wireframe/diventasound.png" class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div>
-                                <h6 id="wireframe">Look and feel</h6>
-                                <h6 style="color: black; font-weight: bold;">Fonts</h6>
-                                <h6 id="form">I font impiegati in SoundText sono due: Poppins e Mitr.
-                                    Entrambi caratterizzati da un design semplice e pulito contribuiscono a creare
-                                    un'esperienza di
-                                    lettura agevole e piacevole per gli utenti del sito. Essi facilitano la lettura e la
-                                    fruizione dei testi e delle traduzioni musicali. </h6>
-                                <h6 id="form">Il font Poppins è ampiamente apprezzato per la sua versatilità e
-                                    leggibilità.
-                                    È un carattere sans-serif moderno e geometrico, con linee pulite e angoli
-                                    arrotondati.
-                                    La sua struttura bilanciata e leggera lo rende ideale per essere utilizzato in
-                                    titoli, sottotitoli e altri elementi di enfasi nel design.
-                                </h6>
-                                <h6 id="form">Il font Mitr è anch'esso un carattere sans-serif, noto per la sua
-                                    leggibilità e
-                                    chiarezza.
-                                    È caratterizzato da forme semplici e curve morbide, che lo rendono adatto per il
-                                    corpo del testo e il contenuto principale del sito.
-                                    Mitr può fornire una buona leggibilità anche a dimensioni di testo più piccole,
-                                    garantendo una visualizzazione confortevole per gli utenti.
-                                </h6>
-                                <h6 style="color: black; font-weight: bold;">Colori</h6>
-                                <h6 id="form">La grafica di SoundText è caratterizzata da un design pulito e dai colori
-                                    vibranti.
-                                    La nav bar trasparente consente di mettere in risalto lo sfondo animato, che
-                                    presenta una varietà di colori sfumati e gradienti.
-                                    Ad ogni refresh della pagina, lo sfondo cambia colore e sfumatura, creando un
-                                    effetto visivo dinamico e coinvolgente.
-                                    I colori predominanti nello sfondo sono il giallo, l'arancione, il rosa, il rosso e
-                                    il viola, nelle loro diverse sfumature.
-                                    Questi colori vivaci possono creare un'atmosfera energica e accattivante,
-                                    contribuendo a trasmettere la passione e l'emozione della musica. </h6>
+                        <div class="col-lg bench">Competitors
+                            <h6 class="form">I siti web che offrono esperienze d'utilizzo analoghe a SoundText sono
+                                molteplici
+                                considerando il pubblico cui sono rivolti.
+                                Alcuni possibili competitor potrebbero includere Genius, AZLyrics, Letras.mus.br.
 
-                                <h6 id="form">Per garantire una buona leggibilità, i testi sono mantenuti in colore nero
-                                    su uno
-                                    sfondo sfumato.
-                                    Questo contrasto tra i colori vivaci dello sfondo e il testo nero crea un effetto
-                                    visivo nitido e favorisce una chiara comprensione del contenuto.
-                                    L'uso di una grafica pulita e dei colori vibranti contribuisce a creare
-                                    un'esperienza visiva coinvolgente su SoundText,
-                                    che si adatta alla natura dinamica e multilingue del sito,
-                                    senza sacrificare la leggibilità e la facilità d'uso per gli utenti.</h6>
-
-                            </div>
-                        </div>
-                        <div>
-                            <h5>3. Linguaggi e strumenti</h5>
-                            <h6 id="form">I linguaggi utilizzati sono HTML, CSS e JavaScript.
-                                Gli strumenti impiegati sono diversi, per alcuni dei quali è fondamentale dare le licenze.
                             </h6>
-                            <h6 id="inter">CodePen: piattaforma dalla quale ho ricavato lo sfondo e adattato al mio sito
-                            </h6>
-                            <h6 id="inter">Lucid: software per diagrammi che ho impiegato per la struttura ad albero del
-                                sito</h6>
-                            <h6 id="inter">Font Awesome: realizzazione delle icone</h6>
-                            <h6 id="inter">Google Analytics: misuratore e strumento d'analisi per il mio sito</h6>
-                            <h6 id="inter">Canva: realizzazione della brochure, post sui social e favicon</h6>
-                            <h6 id="inter">Bootstrap: libreria che ho impiegato enormemente per la creazione degli
-                                elementi del sito</h6>
-                            <h6 id="inter">Getty Images: agenzia di immagini da cui ho ricavato le immagini, cui però è
-                                fondamentale riconoscerne la licenza</h6>
-                            <h6 id="inter">Spotify: creazione degli embedded delle canzoni e selezione di alcune
-                                immagini</h6>
-                            <h6 id="inter">Tiny: realizzazione degli stili editor nel form della sezione Diventa un
-                                SoundTexter</h6>
-                            <h6 id="inter">Visual Studio Code: editor di codice sorgente per la realizzazione del sito
-                            </h6>
-                            <h6 id="inter">Balsamiq: realizzazione del Wireframe</h6>
-                            <h6 id="inter">Google Font: scelta dei font</h6>
-                            <h6 id="inter">Adobe Color: scelta dei colori</h6>
-                            <h6 id="inter">GitHub: pubblicazione di SoundText</h6>
-                            <h6 id="inter">Angolotesti: selezione testi canzoni e traduzioni</h6>
+                            <h6 class="form">Genius è un sito web che offre testi, annotazioni, spiegazioni e
+                                traduzioni ed è
+                                noto per la comunità di utenti che contribuiscono
+                                con le annotazioni e interpretazioni.</h6>
+                            <h6 class="form">AZLyrics fornisce una raccolta di testi musicali in diverse lingue cui gli
+                                utenti
+                                possono far riferimento.</h6>
+                            <h6 class="form">Letras.mus.br è un sito brasiliano che offre testi in portoghese oltre ad
+                                altre
+                                lingue.</h6>
+                            <h6 class="form">La presenza di competitor non significa necessariamente che questi offrano
+                                le stesse
+                                caratteristiche e funzionalità di SoundText.
+                                La sua immediata differenza distintiva è la sua natura collaborativa, la sua
+                                interattività, la sua grafica funzionale e l'avvio di una possibile comunità di
+                                amanti di musica.</h6>
                         </div>
                     </div>
-
-                    <div class="doc1 text-center container container-fluid">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <h4>Communication Strategy</h4>
-                            </div>
-                            <div>
-                                <h5>1. Background</h5>
-                                <h6 id="form">L'idea principale dietro la realizzazione di SoundText deriva dal volersi
-                                    differenziare dai competitor,
-                                    perché oltre a fornire un servizio di traduzione di testi in diverse lingue cerca di
-                                    puntare sul concetto di partecipazione e sul poter diventare SoundTexter
-                                    e di contribuire quindi alla realizzazione di una solida community. </h6>
-                                <h6 id="form">Elemento su cui si punta in particolare è la grafica, ma anche la
-                                    chiarezza e la
-                                    semplicità, elementi per cui SoundText si contraddistingue.
-                                    Il background animato e dai colori vivaci potrebbe essere stato scelto per
-                                    richiamare l'energia e l'emozione associate
-                                    alla musica stessa. La musica è un'arte che
-                                    evoca emozioni e sentimenti, e lo sfondo di SoundText potrebbe riflettere
-                                    quest'aspetto, cercando di trasmettere l'entusiasmo e la passione associate
-                                    alla musica attraverso il suo design visivo.</h6>
-                                </h6>
-                            </div>
-                            <div>
-                                <h5>2. Obiettivi comunicativi</h5>
-                                <h6 id="form">Gli obiettivi comunicativi di SoundText in termini di comunicazione web
-                                    sono:</h6>
-                                <h6 id="inter" style="font-family: Poppins, sans-serif; font-weight: bold;">🎯 Ottenere almeno 300 visualizzazioni 
-                                </h6>
-                                <h6 id="inter" style="font-family: Poppins, sans-serif; font-weight: bold;">🎯 Ottenere almeno 25 followers sulla pagina Instagram in 24 ore dalla data di lancio (21 maggio
-                                    2023) e dei feedback su SoundText
-                                </h6>
-                                <h6 id="inter">Il tutto per creare interesse e un'esperienza user-friendly coinvolgente
-                                    e visivamente
-                                    accattivante per
-                                    il pubblico target, spingendoli a visitare il sito e a scoprire di più, fino a diventare dei veri SoundTexter proponendo proprie traduzioni.
-                                </h6>
-                            </div>
-                            <div>
-                                <h5>3. Target audience e messaggio</h5>
-                                <h6 id="form">Il target audience di SoundText sono gli amanti della musica di diverse
-                                    età e
-                                    background linguistici che desiderano accedere alle lyrics dei testi musicali e
-                                    alle traduzioni in molte lingue.</h6>
-                                <h6 id="form">Utilizzando canali online come social media e attraverso altre modalità di
-                                    promozione,
-                                    il messaggio di SoundText è quello di
-                                    offrire una piattaforma completa e collaborativa
-                                    per esplorare e comprendere il significato delle canzoni attraverso i testi e le
-                                    traduzioni,
-                                    promuovendo l'accessibilità linguistica e la partecipazione degli utenti.
-                                    Tutto per raggiungere il suo pubblico target, coinvolgendolo e stimolandone
-                                    l'esplorazione e la condivisione delle traduzioni.</h6>
-                            </div>
-                            <div>
-                                <h5>4. Promozione</h5>
-                                <h6 id="form">SoundText sarà promosso attraverso il passaparola tra le principali
-                                    piattaforme di messaggistica come Whatsapp e Telegram. Successivamente verranno
-                                    utilizzate anche le piattaforme social online più diffuse, come
-                                    Instagram, per raggiungere un
-                                    pubblico più ampio e diffondere ulteriormente il messaggio di SoundText.
-                                    </h6>
-                            </div>
-                            <div>
-                                <h5>5. Valutazione dei risultati</h5>
-                                <h6 id="form">Le metriche utilizzate per monitorare la crescita del progetto
-                                    includeranno le visualizzazioni sulla piattaforma, con l'obiettivo di raggiungere
-                                    almeno 300 visite. Google Analytics sarà utilizzato come strumento
-                                    di monitoraggio per raccogliere
-                                    i dati e le statistiche sulle interazioni degli utenti con il sito.</h6>
-                            </div>
-                            <div>
-                                <h6 id="wireframe">Brochure</h6>
-                                <h6 id="form">Inoltre verranno utilizzate delle brochure per promuovere SoundText e
-                                    diffonderne la conoscenza tra il pubblico. Questo strumento di marketing
-                                    tradizionale potrà
-                                    contribuire a generare interesse e attirare nuovi visitatori.</h6>
-                            </div>
-                            <div class="text-center">
-                                <img id="flowsvg" src="imgs/brochure/brochureaperta.png" class="img-fluid" alt="...">
-                                <h6 id="form">Successivamente verrà valutato l'impatto sui social media menzionati in
-                                    precedenza, per esempio mediante i feedback ricevuti su Instagram e sul numero di
-                                    follower (almeno 25 in 24 ore).
-                                    L'obiettivo sarà soprattutto quello di sfruttare il potere del passaparola online.
-                                </h6>
-                            </div>
-                            <div class="col col-sm">
-                                <div class="text-center">
-                                    <h5>Risultati</h5>
-                                    <div class="card mb-6 text-center mx-auto" style="max-width: 400px;">
-                                        <div class="row g-6">
-                                            <div class="col-md-6 d-flex">
-                                                <img src="imgs/feedinsta.jpg" class="img-fluid rounded-start" alt="...">
-                                            </div>
-                                            <div class="col-md-6 d-flex">
-                                                <img src="imgs/feedinsta2.jpg" class="img-fluid rounded-start"
-                                                    alt="...">
-                                            </div>
-                                            <p
-                                                style="font-size: 10px; font-family: Poppins, sans-serif; font-weight: bold; padding-top:7px">
-                                                Feedback su SoundText ricevuti tramite l'area direct di Instagram</p>
-                                        </div>
+                    <div>
+                        <h5>2. Struttura e layout</h5>
+                    </div>
+                    <div>
+                        <h6 class="form">La struttura di SoundText prevede una landing page dalla quale gli utenti
+                            vengono
+                            reindirizzati alla home page.
+                        </h6>
+                        <h6 class="form">La homepage presenta il logo del sito e una barra di navigazione che include
+                            le seguenti
+                            sezioni: Artisti, Canzoni, Diventa un SoundTexter e una barra di ricerca.
+                            In basso è presente il footer con gli indirizzamenti alle pagine social Instagram e
+                            Facebook.</h6>
+                        <h6 class="form">Nella sezione "Artisti" gli artisti sono suddivisi in un elenco alfabetico,
+                            presentati
+                            in una tabella a 2 colonne.
+                            Alla fine della tabella è presente una numerazione per la navigazione tramite
+                            paginazione.</h6>
+                        <h6 class="form">Nella sezione "Canzoni" per ogni singolo o album dell'artista viene
+                            visualizzata
+                            un'immagine, il nome dell'artista e il testo originale della canzone.
+                            È presente un pulsante che consente di selezionare la lingua e ottenere una traduzione
+                            immediata.
+                            Inoltre, viene incorporato un lettore di Spotify relativo alla canzone selezionata.</h6>
+                        <h6 class="form">Nella sezione "Diventa un SoundTexter" è presente un modulo in cui gli utenti
+                            possono
+                            compilare i dati per inviare una traduzione di una canzone.
+                            È presente anche un editor di testo che consente di formattare il testo con
+                            sottolineature, testi in grassetto o corsivo, e così via.</h6>
+                    </div>
+                    <div>
+                        <h6 class="wireframe">Architettura ad albero</h6>
+                        <div class="text-center">
+                            <img src="imgs/wireframe/SoundText.svg" class="img-fluid flowsvg" alt="...">
+                        </div>
+                    </div>
+                    <div>
+                        <h6 class="wireframe">Wireframe</h6>
+                        <div class="d-flex justify-content-center">
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="imgs/wireframe/landingpage.png" class="d-block w-100" alt="...">
                                     </div>
-                                    <div>
-                                        <img src="imgs/screenpaginsta.png" class="img-fluid insta max-width: 40px"
-                                            alt="">
-                                        <p
-                                            style="font-size: 10px; font-family: Poppins, sans-serif; font-weight: bold;">
-                                            Obiettivo di almeno 25 followers in 24 ore raggiunto in data 22 maggio 2023</p>
+                                    <div class="carousel-item">
+                                        <img src="imgs/wireframe/homepage.png" class="d-block w-100" alt="...">
                                     </div>
-
+                                    <div class="carousel-item">
+                                        <img src="imgs/wireframe/artisti.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs/wireframe/canzoni.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs/wireframe/diventasound.png" class="d-block w-100" alt="...">
+                                    </div>
                                 </div>
-                                <h4 id="analisi">Google Analytics</h4>
-                                <div class="text-center">
-                                    <img id="flowsvg" src="imgs/analytics23maggio.png" class="img-fluid" alt="...">
-                                </div>
-                                <h6 id="form" style="font-family: Poppins, sans-serif; font-weight: bold;">Come sperato siamo riusciti a superare le
-                                    aspettative
-                                    delle 300 visualizzazioni andando ben oltre
-                                    l'obiettivo in meno di 48 ore, con un
-                                    picco massimo attuale di 115 utenti in data 23/05/2023.</h6>
+                                <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
                         </div>
+                        <div>
+                            <h6 class="wireframe">Look and feel</h6>
+                            <h6 style="color: black; font-weight: bold;">Fonts</h6>
+                            <h6 class="form">I font impiegati in SoundText sono due: Poppins e Mitr.
+                                Entrambi caratterizzati da un design semplice e pulito contribuiscono a creare
+                                un'esperienza di
+                                lettura agevole e piacevole per gli utenti del sito. Essi facilitano la lettura e la
+                                fruizione dei testi e delle traduzioni musicali. </h6>
+                            <h6 class="form">Il font Poppins è ampiamente apprezzato per la sua versatilità e
+                                leggibilità.
+                                È un carattere sans-serif moderno e geometrico, con linee pulite e angoli
+                                arrotondati.
+                                La sua struttura bilanciata e leggera lo rende ideale per essere utilizzato in
+                                titoli, sottotitoli e altri elementi di enfasi nel design.
+                            </h6>
+                            <h6 class="form">Il font Mitr è anch'esso un carattere sans-serif, noto per la sua
+                                leggibilità e
+                                chiarezza.
+                                È caratterizzato da forme semplici e curve morbide, che lo rendono adatto per il
+                                corpo del testo e il contenuto principale del sito.
+                                Mitr può fornire una buona leggibilità anche a dimensioni di testo più piccole,
+                                garantendo una visualizzazione confortevole per gli utenti.
+                            </h6>
+                            <h6 style="color: black; font-weight: bold;">Colori</h6>
+                            <h6 class="form">La grafica di SoundText è caratterizzata da un design pulito e dai colori
+                                vibranti.
+                                La nav bar trasparente consente di mettere in risalto lo sfondo animato, che
+                                presenta una varietà di colori sfumati e gradienti.
+                                Ad ogni refresh della pagina, lo sfondo cambia colore e sfumatura, creando un
+                                effetto visivo dinamico e coinvolgente.
+                                I colori predominanti nello sfondo sono il giallo, l'arancione, il rosa, il rosso e
+                                il viola, nelle loro diverse sfumature.
+                                Questi colori vivaci possono creare un'atmosfera energica e accattivante,
+                                contribuendo a trasmettere la passione e l'emozione della musica. </h6>
+
+                            <h6 class="form">Per garantire una buona leggibilità, i testi sono mantenuti in colore nero
+                                su uno
+                                sfondo sfumato.
+                                Questo contrasto tra i colori vivaci dello sfondo e il testo nero crea un effetto
+                                visivo nitido e favorisce una chiara comprensione del contenuto.
+                                L'uso di una grafica pulita e dei colori vibranti contribuisce a creare
+                                un'esperienza visiva coinvolgente su SoundText,
+                                che si adatta alla natura dinamica e multilingue del sito,
+                                senza sacrificare la leggibilità e la facilità d'uso per gli utenti.</h6>
+
+                        </div>
+                    </div>
+                    <div>
+                        <h5>3. Linguaggi e strumenti</h5>
+                        <h6 class="form">I linguaggi utilizzati sono HTML, CSS e JavaScript.
+                            Gli strumenti impiegati sono diversi, per alcuni dei quali è fondamentale dare le licenze.
+                        </h6>
+                        <h6 class="inter">CodePen: piattaforma dalla quale ho ricavato lo sfondo e adattato al mio sito
+                        </h6>
+                        <h6 class="inter">Lucid: software per diagrammi che ho impiegato per la struttura ad albero del
+                            sito</h6>
+                        <h6 class="inter">Font Awesome: realizzazione delle icone</h6>
+                        <h6 class="inter">Google Analytics: misuratore e strumento d'analisi per il mio sito</h6>
+                        <h6 class="inter">Canva: realizzazione della brochure, post sui social e favicon</h6>
+                        <h6 class="inter">Bootstrap: libreria che ho impiegato enormemente per la creazione degli
+                            elementi del sito</h6>
+                        <h6 class="inter">Getty Images: agenzia di immagini da cui ho ricavato le immagini, cui però è
+                            fondamentale riconoscerne la licenza</h6>
+                        <h6 class="inter">Spotify: creazione degli embedded delle canzoni e selezione di alcune
+                            immagini</h6>
+                        <h6 class="inter">Tiny: realizzazione degli stili editor nel form della sezione Diventa un
+                            SoundTexter</h6>
+                        <h6 class="inter">Visual Studio Code: editor di codice sorgente per la realizzazione del sito
+                        </h6>
+                        <h6 class="inter">Balsamiq: realizzazione del Wireframe</h6>
+                        <h6 class="inter">Google Font: scelta dei font</h6>
+                        <h6 class="inter">Adobe Color: scelta dei colori</h6>
+                        <h6 class="inter">GitHub: pubblicazione di SoundText</h6>
+                        <h6 class="inter">Angolotesti: selezione testi canzoni e traduzioni</h6>
+                    </div>
+                </div>
+
+                <div class="doc1 text-center container container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <h4>Communication Strategy</h4>
+                        </div>
+                        <div>
+                            <h5>1. Background</h5>
+                            <h6 class="form">L'idea principale dietro la realizzazione di SoundText deriva dal volersi
+                                differenziare dai competitor,
+                                perché oltre a fornire un servizio di traduzione di testi in diverse lingue cerca di
+                                puntare sul concetto di partecipazione e sul poter diventare SoundTexter
+                                e di contribuire quindi alla realizzazione di una solida community. </h6>
+                            <h6 class="form">Elemento su cui si punta in particolare è la grafica, ma anche la
+                                chiarezza e la
+                                semplicità, elementi per cui SoundText si contraddistingue.
+                                Il background animato e dai colori vivaci potrebbe essere stato scelto per
+                                richiamare l'energia e l'emozione associate
+                                alla musica stessa. La musica è un'arte che
+                                evoca emozioni e sentimenti, e lo sfondo di SoundText potrebbe riflettere
+                                quest'aspetto, cercando di trasmettere l'entusiasmo e la passione associate
+                                alla musica attraverso il suo design visivo.</h6>
+                            </h6>
+                        </div>
+                        <div>
+                            <h5>2. Obiettivi comunicativi</h5>
+                            <h6 class="form">Gli obiettivi comunicativi di SoundText in termini di comunicazione web
+                                sono:</h6>
+                            <h6 class="inter" style="font-family: Poppins, sans-serif; font-weight: bold;">🎯 Ottenere
+                                almeno 300 visualizzazioni
+                            </h6>
+                            <h6 class="inter" style="font-family: Poppins, sans-serif; font-weight: bold;">🎯 Ottenere
+                                almeno 25 followers sulla pagina Instagram in 24 ore dalla data di lancio (21 maggio
+                                2023) e dei feedback su SoundText
+                            </h6>
+                            <h6 class="inter">Il tutto per creare interesse e un'esperienza user-friendly coinvolgente
+                                e visivamente
+                                accattivante per
+                                il pubblico target, spingendoli a visitare il sito e a scoprire di più, fino a diventare
+                                dei veri SoundTexter proponendo proprie traduzioni.
+                            </h6>
+                        </div>
+                        <div>
+                            <h5>3. Target audience e messaggio</h5>
+                            <h6 class="form">Il target audience di SoundText sono gli amanti della musica di diverse
+                                età e
+                                background linguistici che desiderano accedere alle lyrics dei testi musicali e
+                                alle traduzioni in molte lingue.</h6>
+                            <h6 class="form">Utilizzando canali online come social media e attraverso altre modalità di
+                                promozione,
+                                il messaggio di SoundText è quello di
+                                offrire una piattaforma completa e collaborativa
+                                per esplorare e comprendere il significato delle canzoni attraverso i testi e le
+                                traduzioni,
+                                promuovendo l'accessibilità linguistica e la partecipazione degli utenti.
+                                Tutto per raggiungere il suo pubblico target, coinvolgendolo e stimolandone
+                                l'esplorazione e la condivisione delle traduzioni.</h6>
+                        </div>
+                        <div>
+                            <h5>4. Promozione</h5>
+                            <h6 class="form">SoundText sarà promosso attraverso il passaparola tra le principali
+                                piattaforme di messaggistica come Whatsapp e Telegram. Successivamente verranno
+                                utilizzate anche le piattaforme social online più diffuse, come
+                                Instagram, per raggiungere un
+                                pubblico più ampio e diffondere ulteriormente il messaggio di SoundText.
+                            </h6>
+                        </div>
+                        <div>
+                            <h5>5. Valutazione dei risultati</h5>
+                            <h6 class="form">Le metriche utilizzate per monitorare la crescita del progetto
+                                includeranno le visualizzazioni sulla piattaforma, con l'obiettivo di raggiungere
+                                almeno trecento visite. Google Analytics sarà utilizzato come strumento
+                                di monitoraggio per raccogliere
+                                i dati e le statistiche sulle interazioni degli utenti con il sito.</h6>
+                        </div>
+                        <div>
+                            <h6 class="wireframe">Brochure</h6>
+                            <h6 class="form">Inoltre verranno utilizzate delle brochure per promuovere SoundText e
+                                diffonderne la conoscenza tra il pubblico. Questo strumento di marketing
+                                tradizionale potrà
+                                contribuire a generare interesse e attirare nuovi visitatori.</h6>
+                        </div>
+                        <div class="text-center">
+                            <img src="imgs/brochure/brochureaperta.png" class="img-fluid flowsvg" alt="...">
+                            <h6 class="form">Successivamente verrà valutato l'impatto sui social media menzionati in
+                                precedenza, per esempio mediante i feedback ricevuti su Instagram e sul numero di
+                                follower (almeno 25 in 24 ore).
+                                L'obiettivo sarà soprattutto quello di sfruttare il potere del passaparola online.
+                            </h6>
+                        </div>
+                        <div class="col col-sm">
+                            <div class="text-center">
+                                <h5>Risultati</h5>
+                                <div class="card mb-6 text-center mx-auto" style="max-width: 400px;">
+                                    <div class="row g-6">
+                                        <div class="col-md-6 d-flex">
+                                            <img src="imgs/feedinsta.jpg" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-6 d-flex">
+                                            <img src="imgs/feedinsta2.jpg" class="img-fluid rounded-start"
+                                                 alt="...">
+                                        </div>
+                                        <p
+                                                style="font-size: 10px; font-family: Poppins, sans-serif; font-weight: bold; padding-top:7px">
+                                            Feedback su SoundText ricevuti tramite l'area direct di Instagram</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="imgs/screenpaginsta.png" class="img-fluid insta max-width: 40px"
+                                         alt="">
+                                    <p
+                                            style="font-size: 10px; font-family: Poppins, sans-serif; font-weight: bold;">
+                                        Obiettivo di almeno 25 followers in 24 ore raggiunto in data 22 maggio 2023</p>
+                                </div>
+
+                            </div>
+                            <h4 id="analisi">Google Analytics</h4>
+                            <div class="text-center">
+                                <img src="imgs/analytics23maggio.png" class="img-fluid flowsvg" alt="...">
+                            </div>
+                            <h6 class="form" style="font-family: Poppins, sans-serif; font-weight: bold;">Come sperato
+                                siamo riusciti a superare le
+                                aspettative
+                                delle 300 visualizzazioni andando ben oltre
+                                l'obiettivo in meno di 48 ore, con un
+                                picco massimo attuale di 115 utenti in data 23/05/2023.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-                        <footer class="footer text-white text-center" style="background-color: transparent;">
-                            <div class="container">
-                                <div class="row align-items-end">
-                                    <div class="col-md col-sm-12 colfooter">
+<footer class="footer text-white text-center" style="background-color: transparent;">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-md col-sm-12 colfooter">
                                         <span>Designed by Federica Signoriello
                                             <i class="fa-regular fa-copyright" style="color: #000000;"></i>
                                         </span>
-                                    </div>
-                                    <div class="col-md col-sm-6 text-center">
-                                        <a class="no_underline active" href="documentazione.html">Documentazione</a>
-                                        <i class="fa-regular fa-folder-open" style="color: #000000;"></i>
-                                    </div>
-                                    <div class="col-md col-sm-6 text-center">
-                                        <a class="no_underline" href="documentazione.html#analisi">Analytics</a>
-                                        <i class="fa-solid fa-chart-line" style="color: #000000;"></i>
-                                    </div>
-                                    <div class="col-md col-sm-6 text-center">
-                                        <a href="https://www.instagram.com/soundtext_/" class="mr-3"><i
-                                                class="fa-brands fa-instagram fa-lg" style="color: #000000;"></i></a>
-                                        <a
-                                            href="https://www.facebook.com/soundtext.iu/?paipv=0&eav=AfYxPOToPdx8lRBhhSwM_xNZul_dYdwlLi3Pqi75-kQTErKuaojSLT_VcWR-d7_fKBs&_rdr"><i
-                                                class="fa-brands fa-facebook fa-lg" style="color: #000000;"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
+            </div>
+            <div class="col-md col-sm-6 text-center">
+                <a class="no_underline active" href="documentazione.html">Documentazione</a>
+                <i class="fa-regular fa-folder-open" style="color: #000000;"></i>
+            </div>
+            <div class="col-md col-sm-6 text-center">
+                <a class="no_underline" href="documentazione.html#analisi">Analytics</a>
+                <i class="fa-solid fa-chart-line" style="color: #000000;"></i>
+            </div>
+            <div class="col-md col-sm-6 text-center">
+                <a href="https://www.instagram.com/soundtext_/" class="mr-3"><i
+                        class="fa-brands fa-instagram fa-lg" style="color: #000000;"></i></a>
+                <a
+                        href="https://www.facebook.com/soundtext.iu/?paipv=0&eav=AfYxPOToPdx8lRBhhSwM_xNZul_dYdwlLi3Pqi75-kQTErKuaojSLT_VcWR-d7_fKBs&_rdr"><i
+                        class="fa-brands fa-facebook fa-lg" style="color: #000000;"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
 
-                        <!------------------------------------------------ Javascript Canvas ------------------------------------------------>
-
-                        <script type="module">
-                            import * as PIXI from "https://cdn.skypack.dev/pixi.js@5.x";
-                            import { KawaseBlurFilter } from "https://cdn.skypack.dev/@pixi/filter-kawase-blur@3.2.0";
-                            import SimplexNoise from "https://cdn.skypack.dev/simplex-noise@3.0.0";
-                            import hsl from "https://cdn.skypack.dev/hsl-to-hex";
-                            import debounce from "https://cdn.skypack.dev/debounce";
-
-                            // return a random number within a range
-                            function random(min, max) {
-                                return Math.random() * (max - min) + min;
-                            }
-
-                            // map a number from 1 range to another
-                            function map(n, start1, end1, start2, end2) {
-                                return ((n - start1) / (end1 - start1)) * (end2 - start2) + start2;
-                            }
-
-                            // Create a new simplex noise instance
-                            const simplex = new SimplexNoise();
-
-                            // ColorPalette class
-                            class ColorPalette {
-                                constructor() {
-                                    this.setColors();
-                                    this.setCustomProperties();
-                                }
-
-                                setColors() {
-                                    // pick a random hue somewhere between 220 and 360
-                                    this.hue = ~~random(220, 360);
-                                    this.complimentaryHue1 = this.hue + 30;
-                                    this.complimentaryHue2 = this.hue + 60;
-                                    // define a fixed saturation and lightness
-                                    this.saturation = 95;
-                                    this.lightness = 50;
-
-                                    // define a base color
-                                    this.baseColor = hsl(this.hue, this.saturation, this.lightness);
-                                    // define a complimentary color, 30 degress away from the base
-                                    this.complimentaryColor1 = hsl(
-                                        this.complimentaryHue1,
-                                        this.saturation,
-                                        this.lightness
-                                    );
-                                    // define a second complimentary color, 60 degrees away from the base
-                                    this.complimentaryColor2 = hsl(
-                                        this.complimentaryHue2,
-                                        this.saturation,
-                                        this.lightness
-                                    );
-
-                                    // store the color choices in an array so that a random one can be picked later
-                                    this.colorChoices = [
-                                        this.baseColor,
-                                        this.complimentaryColor1,
-                                        this.complimentaryColor2
-                                    ];
-                                }
-
-                                randomColor() {
-                                    // pick a random color
-                                    return this.colorChoices[~~random(0, this.colorChoices.length)].replace(
-                                        "#",
-                                        "0x"
-                                    );
-                                }
-
-                                setCustomProperties() {
-                                    // set CSS custom properties so that the colors defined here can be used throughout the UI
-                                    document.documentElement.style.setProperty("--hue", this.hue);
-                                    document.documentElement.style.setProperty(
-                                        "--hue-complimentary1",
-                                        this.complimentaryHue1
-                                    );
-                                    document.documentElement.style.setProperty(
-                                        "--hue-complimentary2",
-                                        this.complimentaryHue2
-                                    );
-                                }
-                            }
-
-                            // Orb class
-                            class Orb {
-                                // Pixi takes hex colors as hexidecimal literals (0x rather than a string with '#')
-                                constructor(fill = 0x000000) {
-                                    // bounds = the area an orb is "allowed" to move within
-                                    this.bounds = this.setBounds();
-                                    // initialise the orb's { x, y } values to a random point within it's bounds
-                                    this.x = random(this.bounds["x"].min, this.bounds["x"].max);
-                                    this.y = random(this.bounds["y"].min, this.bounds["y"].max);
-
-                                    // how large the orb is vs it's original radius (this will modulate over time)
-                                    this.scale = 1;
-
-                                    // what color is the orb?
-                                    this.fill = fill;
-
-                                    // the original radius of the orb, set relative to window height
-                                    this.radius = random(window.innerHeight / 6, window.innerHeight / 3);
-
-                                    // starting points in "time" for the noise/self similar random values
-                                    this.xOff = random(0, 1000);
-                                    this.yOff = random(0, 1000);
-                                    // how quickly the noise/self similar random values step through time
-                                    this.inc = 0.002;
-
-                                    // PIXI.Graphics is used to draw 2d primitives (in this case a circle) to the canvas
-                                    this.graphics = new PIXI.Graphics();
-                                    this.graphics.alpha = 0.825;
-
-                                    // 250ms after the last window resize event, recalculate orb positions.
-                                    window.addEventListener(
-                                        "resize",
-                                        debounce(() => {
-                                            this.bounds = this.setBounds();
-                                        }, 250)
-                                    );
-                                }
-
-                                setBounds() {
-                                    // how far from the { x, y } origin can each orb move
-                                    const maxDist =
-                                        window.innerWidth < 1000 ? window.innerWidth / 3 : window.innerWidth / 5;
-                                    // the { x, y } origin for each orb (the bottom right of the screen)
-                                    const originX = window.innerWidth / 1.25;
-                                    const originY =
-                                        window.innerWidth < 1000
-                                            ? window.innerHeight
-                                            : window.innerHeight / 1.375;
-
-                                    // allow each orb to move x distance away from it's x / y origin
-                                    return {
-                                        x: {
-                                            min: originX - maxDist,
-                                            max: originX + maxDist
-                                        },
-                                        y: {
-                                            min: originY - maxDist,
-                                            max: originY + maxDist
-                                        }
-                                    };
-                                }
-
-                                update() {
-                                    // self similar "psuedo-random" or noise values at a given point in "time"
-                                    const xNoise = simplex.noise2D(this.xOff, this.xOff);
-                                    const yNoise = simplex.noise2D(this.yOff, this.yOff);
-                                    const scaleNoise = simplex.noise2D(this.xOff, this.yOff);
-
-                                    // map the xNoise/yNoise values (between -1 and 1) to a point within the orb's bounds
-                                    this.x = map(xNoise, -1, 1, this.bounds["x"].min, this.bounds["x"].max);
-                                    this.y = map(yNoise, -1, 1, this.bounds["y"].min, this.bounds["y"].max);
-                                    // map scaleNoise (between -1 and 1) to a scale value somewhere between half of the orb's original size, and 100% of it's original size
-                                    this.scale = map(scaleNoise, -1, 1, 0.5, 1);
-
-                                    // step through "time"
-                                    this.xOff += this.inc;
-                                    this.yOff += this.inc;
-                                }
-
-                                render() {
-                                    // update the PIXI.Graphics position and scale values
-                                    this.graphics.x = this.x;
-                                    this.graphics.y = this.y;
-                                    this.graphics.scale.set(this.scale);
-
-                                    // clear anything currently drawn to graphics
-                                    this.graphics.clear();
-
-                                    // tell graphics to fill any shapes drawn after this with the orb's fill color
-                                    this.graphics.beginFill(this.fill);
-                                    // draw a circle at { 0, 0 } with it's size set by this.radius
-                                    this.graphics.drawCircle(0, 0, this.radius);
-                                    // let graphics know we won't be filling in any more shapes
-                                    this.graphics.endFill();
-                                }
-                            }
-
-                            // Create PixiJS app
-                            const app = new PIXI.Application({
-                                // render to <canvas class="orb-canvas"></canvas>
-                                view: document.querySelector(".orb-canvas"),
-                                // auto adjust size to fit the current window
-                                resizeTo: window,
-                                // transparent background, we will be creating a gradient background later using CSS
-                                transparent: true
-                            });
-
-                            app.stage.filters = [new KawaseBlurFilter(30, 10, true)];
-
-                            // Create colour palette
-                            const colorPalette = new ColorPalette();
-
-                            // Create orbs
-                            const orbs = [];
-
-                            for (let i = 0; i < 10; i++) {
-                                const orb = new Orb(colorPalette.randomColor());
-
-                                app.stage.addChild(orb.graphics);
-
-                                orbs.push(orb);
-                            }
-
-                            // Animate!
-                            if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-                                app.ticker.add(() => {
-                                    orbs.forEach((orb) => {
-                                        orb.update();
-                                        orb.render();
-                                    });
-                                });
-                            } else {
-                                orbs.forEach((orb) => {
-                                    orb.update();
-                                    orb.render();
-                                });
-                            }
-
-                        </script>
-
-                        <!------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------ Javascript Canvas ------------------------------------------------>
+<script src="js/background.js" type="module"></script>
+<!------------------------------------------------------------------------------------------------------------------->
 
 
 </body>

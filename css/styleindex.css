@@ -137,7 +137,7 @@ h5 {
     text-decoration: none;
 }
 
-#btn-editor {
+.btn-editor {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -154,4 +154,10 @@ h5 {
 
 .active {
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .my_container {
+        padding: 1.5rem;
+    }
 }
