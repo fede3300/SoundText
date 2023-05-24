@@ -97,12 +97,14 @@ h5 {
     font-size: 14px;
     padding-left: 50px;
     padding-right: 50px;
+    text-align: left;
 }
 
 .inter {
     font-size: 14px;
     padding-left: 50px;
     padding-right: 50px;
+    text-align: left;
 }
 
 .card-img-top {
